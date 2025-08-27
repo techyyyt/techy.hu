@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+body {
+	font-family: 'Roboto Mono', monospace;
+}
+
+.bg-space {
+	background: linear-gradient(160deg, #0f172a 0%, #1e1b4b 40%, #312e81 75%, #1e1b4b 100%);
+}
+
+.floating-box {
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.floating-box:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+.link-button {
+	transition: all 0.3s ease;
+}
+
+.link-button:hover {
+	transform: translateY(-2px);
+}
+
+.blink {
+	animation: blink 2s infinite;
+}
+
+@keyframes blink {
+	0%,
+	50% {
+		opacity: 1;
+	}
+	51%,
+	100% {
+		opacity: 0;
+	}
+}
+
+.hover-project {
+	transition:
+		transform 0.25s ease,
+		background-color 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+.hover-project:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hover-link {
+	transition:
+		transform 0.2s ease,
+		background-color 0.2s ease;
+}
+
+.hover-link:hover {
+	transform: translateY(-2px);
+	background-color: #6b7280;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
